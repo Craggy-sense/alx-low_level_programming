@@ -2,11 +2,14 @@
 /**
  * main - to out put the string using put function.
  *
+ * Descrive :Programming is like building a multilingual puzzle
+ *
+ * REturn :0
  */
 int main(void)
 {
 	
-	put("Programming is like building a multilingual puzzle\n");
+	puts("Programming is like building a multilingual puzzle\n");
 	return (0);
 
 }
