@@ -3,7 +3,7 @@
 #include <unistd.h>
 
 /**
- * main - main entry
+ * main - entry point of program
  *
  * Description: print line a  std error
  *
