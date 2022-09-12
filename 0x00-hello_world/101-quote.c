@@ -7,7 +7,7 @@
  *
  * Description: print line a  std error
  *
- * Return 1 (Success)
+ * Return: Always 1 (Success)
  */
 int main(void)
 {
