@@ -1,15 +1,11 @@
 #include <stdio.h>
-
 /**
- * main - to out put the string using put function.
+ * main- Serves as the entry point for the program
  *
- * Description: using main function
- * Programming is like building a multilingual puzzle
- * Return :0
+ * Return: By default returns zero if no errors otherwise returns non-zero value.
  */
 int main(void)
-{
-	
+{	
 	puts("Programming is like building a multilingual puzzle\n");
 	return (0);
 
