@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * print_sign - prints the sign of a number
  * @n: postive, zero or negative interger
@@ -16,7 +15,7 @@ int print_sign(int n);
 	else if (n < 0)
 	{
 		_putchar('-');
-		return (-1);
+		return(-1);
 	}
 	else
 	{
