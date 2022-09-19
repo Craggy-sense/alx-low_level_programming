@@ -1,5 +1,9 @@
-Write a function that swaps the values of two integers.
+Write a function that returns the length of a string.
 
 
 
-    Prototype: void swap_int(int *a, int *b);
+    Prototype: int _strlen(char *s);
+
+
+
+FYI: The standard library provides a similar function: strlen. Run man strlen to learn more.
