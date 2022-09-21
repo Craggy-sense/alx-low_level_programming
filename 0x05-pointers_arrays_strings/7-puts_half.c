@@ -1,8 +1,10 @@
 #include "main.h"
 
 /**
- * pust_half - prints the second half of the string
+ * puts_half -> prints the second half of the string
+ *
  * @str: the string reference
+ *
  * Return: 0
  */
 
