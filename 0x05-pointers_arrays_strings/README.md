@@ -1,9 +1,9 @@
-Write a function that returns the length of a string.
+Write a function that prints a string, followed by a new line, to stdout.
 
 
 
-    Prototype: int _strlen(char *s);
+    Prototype: void _puts(char *str);
 
 
 
-FYI: The standard library provides a similar function: strlen. Run man strlen to learn more.
+FYI: The standard library provides a similar function: puts. Run man puts to learn more.
