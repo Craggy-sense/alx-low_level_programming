@@ -8,12 +8,13 @@
 
 int _stlen(char *s)
 {
-	int l = 0;
+	int len;
 
 	while (*s != '\0')
 	{
-		s++;
-		l++;
+		len += 1;
+		*s = *s + 1;
+
 	}
-	return (1);
+	return (len);
 }
