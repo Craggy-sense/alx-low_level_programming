@@ -9,19 +9,23 @@
 
 char *leet(char *str)
 {
-	int indx1 = 0, index2;
-	char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
+	int i = 0, j;
+	char a[] = {'a', 'e', 'o', 't', 'l'}, b[] = {'A', 'E', 'O', 'T', 'L'},
+	     leet[] = {'4', '3', '0', '7', '1'};
 
-	while (str[indx1])
+	while (str[i] != '\0')
 	{
-		for (indx2 = 0; indx2 <= 7; indx2++)
+		j = 0;
+		while (j < 5)
 		{
-			if (str[indx1] == leet[index2] ||
-					str[indx1] - 32 == leet[indx2])
-				str[indx1] - 32 == leet[indx2]
-					str[indx1] = indx2 + '0';
-			index1++;
+			if (str[i] == a[j] || str[i] == b[j])
+				str[i] = leet[j];
+			j++;
+
 		}
-	return (str);
+
+		i++;
 	}
+
+	return (c);
 }
