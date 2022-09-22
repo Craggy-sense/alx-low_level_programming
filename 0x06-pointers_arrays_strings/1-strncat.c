@@ -1,4 +1,4 @@
-#include "main_h"
+#include "main.h"
 
 /**
  * _strcat - two words
@@ -8,26 +8,29 @@
  * Return: *dest
  */
 
-char *_strncat(char *dest, char *src, int n);
+char *_strncat(char *dest, char *src, int n)
 {
-	int n;
+
+	int z;
 	int k;
 
 	n = 0;
 
-	for (k = 0; n < 1000; k++)
+	for (k = 0; k < 1000; k++)
 	{
 		if (dest[k] == '\0')
 		{
 			break;
 		}
-		n++;
+		z++;
 	}
 
-	for (i = 0; src[i] != '\0' && i < n; k++)
+	for (k = 0; src[k] != '\0' && k < n; k++)
 	{
-		dest[n + k] = src[i];
+		dest[z + k] = src[k];
 	}
-	dest[n + k] = '\0';
+
+	dest[z + k] = '\0';
+
 	return (dest);
 }
