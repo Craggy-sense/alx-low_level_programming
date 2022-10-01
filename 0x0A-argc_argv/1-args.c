@@ -1,21 +1,23 @@
-#include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- * main: prints the number of arguments passed into it
- * description: program should print a number, followed by a new line
- * @argc: number
- * @argv: vector
- * Return: int
+ * main - prints number of arguments
+ * @argc: first parameter
+ * @argv: second parameter
+ *
+ * Description: prints number of arguments
+ * Return: 0 for code success
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 	int sum;
-	for (sum = 0; sum <argc; sum++)
+
+	for (sum = 0; sum < argc; sum++)
 	{
 		*argv[sum] = *argv[sum];
 	}
-	prinf("%d\n", (sum - 1));
+	printf("%d\n", (sum - 1));
 	return (0);
 }
