@@ -11,6 +11,11 @@
 
 int main(int argc, char *argv[])
 {
-	printf("argc = %d", argc);
+	int sum;
+	for (sum = 0; sum <argc; sum++)
+	{
+		*argv[sum] = *argv[sum];
+	}
+	prinf("%d\n", (sum - 1));
 	return (0);
 }
