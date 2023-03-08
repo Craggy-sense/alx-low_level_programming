@@ -1,8 +1,4 @@
-#tells assigns the CC=gcc it tells the makefike to use the GCC compiler
 CC = gcc
-#This assigns name of the 2 source files to SRC
-SRC = main.c school.c
-#all defines a target name that will me built when you run the make command without any arguments.
-all:
-#This specifies the command that will be used to build the school executable.The o flag specifies the output file name
-${CC} ${SRC} -o school
+SRC = main.c school
+all : $(SRC)
+	$(CC) $(SRC) -o school
