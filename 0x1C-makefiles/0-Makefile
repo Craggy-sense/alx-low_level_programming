@@ -4,19 +4,5 @@
  # rule: all
  # /
 
-CC=gcc
-CFLAGS=-Wall -Werror
-
-all: school
-
-
-school: main.o fuctions.o
-$(CC) $(CFLAGS) -o school main.o functions.o
-
-
-main.o: main.c functions.h
-$(CC) $(CFLAGS) -c main.c
-
-functions.o: function.c functions.h
-$(CC) $(CFLAGS) -c functions.c
-
+all: main.c school.c
+	gcc main.c school.c -o school
